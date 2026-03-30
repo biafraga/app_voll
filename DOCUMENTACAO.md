@@ -1,6 +1,8 @@
 # Componentes do react-native
 <Text></Text> -> Como se fosse o p do HTML, Guarda texto.
 <View></View> -> Como se fosse a div do HTML. Guarda bloco.
+<Pressable></Pressable> -> Envolve algum elemento a ser pressionado.
+StyleSheet -> Cria uma folha de estilo para estilização.
 
 
 # Comandos do REACT NATIVE
@@ -28,5 +30,10 @@ função -> ``cammelCase``.
 - 📂screens
 -- 📗LoginScreen.jsx
 -- 📘RegisterScreen.jsx
+
+## OBS: 
+1. Em react native, as propriedades também são conhecidas como props.`Uma boa prática`.
+2. Quando você for criar a estilização através do StyleSheet, a constante deverá estar no padrão cammelCase. `Uma boa prática`.
+3. Na customização do styles, será necessário deixar uma virgula após cada seletor e após cada propriedade dentro do seletor. `Uma boa prática`.
 
 
