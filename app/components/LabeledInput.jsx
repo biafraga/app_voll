@@ -4,15 +4,16 @@ const INPUT_BG = '#F5F5F5';
 const INPUT_BORDER = '#E8E8E8';
 const LABEL_COLOR = '#36454F';
 
-export default function LabeledInput({ label, ...rest }){
+export default function LabeledInput({ label, ...rest }){ //componente de reuso
     return (
         <View style={styles.wrapper}>
             {/* Se o label for passado, exiba o label. Se não, exiba não informado. */}
             <Text style={styles.label}> { label ? label : "Não informado" } </Text>
 
             <TextInput
-                style= {style.input} 
+                style= {styles.input} 
                 placeholderTextColor='#B5B5B5'
+                {...rest}
             />
         </View>
     )
