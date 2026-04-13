@@ -39,6 +39,7 @@ função -> ``cammelCase``.
 ## Components primitivos
 <SafeAreaView> -> é um componente primitivo que garante que o conteúdo seja exibidio dentro das áreas seguras da tela, evitando sobreposição com elementos do sistema como a barra de status. 
 <ScrollView> -> é um componente que permite a rolagem do conteúdo quando ele excede o espaço disponível na tela, garantindo que todos os campos do formulário sejam acessíveis mesmo em dispositivos menores. 
+<TouchableOpacity> -> é um componente que cria uma área clicáve. 
 
 ## Props primitivas
 keyboardType = "email-adress" -> é uma prop do TextInput que otimiza o teclado para entrada de email, exibindo caracteres como "@" e "." de forma mais acessível.

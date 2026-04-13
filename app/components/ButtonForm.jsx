@@ -19,9 +19,15 @@ export default function ButtonForm({ textButton }) {
 const styles = StyleSheet.create({
     button: {
         backgroundColor: BG_BUTTON,
+        borderRadius: 8,
+        marginHorizontal: 40,
     },
     title: {
         color: TEXT_PRIMARY,
+        marginVertical: 2,
+        textAlign: "center",
+        paddingVertical: 7,
+        fontWeight: "bold",
     }
 
 })
