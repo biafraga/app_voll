@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         backgroundColor: BG_BUTTON,
         borderRadius: 8,
         marginHorizontal: 40,
+        marginVertical: 10,
     },
     title: {
         color: TEXT_PRIMARY,
