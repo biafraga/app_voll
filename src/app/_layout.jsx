@@ -14,9 +14,11 @@ export default function RootLayout() {
               }} >
 
           <Drawer.Screen 
-              name="LoginScreen"
+              name="index"
               options={{
-                headerShown: false
+                headerShown: true, //Heador do Drawer
+                drawerLabel: "Login", //Muda o nome da label
+                title: "" //tira o label "index" do header
               }}
           />
           </Drawer>
