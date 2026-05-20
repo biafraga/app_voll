@@ -46,3 +46,10 @@ keyboardType = "email-adress" -> é uma prop do TextInput que otimiza o teclado 
 
 securityTextEntry= {true} -> é uma prop que oculta o texto digitado, ideal para campo de senha. 
 
+## Estrutura do projeto
+1. Eu vou ter um arquivo chamado `index.jsx`, na raiz. Aquivo obrigatório que irá importar o `App.jsx` que está dentro do src.
+2. No arquivo `App.jsx` , arquivo obrigatório que pode ou não vir por padrão. Esse arquivo irá importar o arquivo responsável por guardar o registro fechado das rotas.
+3. Eu vou ter uma pasta voltada para a minha navegação. Ela normalmente se chama routes/navigation ou tabs. Dentro dessa pasta eu vou ter um arquivo de registro das telas, nomeação das rotas e estilização das telas. Esse arquivo se chama, normalmente, StackRoutes. 
+4. Dentro da pasta routes, além do arquivo `StackRoutes.jsx`. eu vou ter um arquivo chamado index.jsx que irá chamar o `StackRoutes.jsx`. Esse index é o arquivo que será chamamdo no `App.jsx`.
+5. Todo componente de reuso deverá estar na pasta [src/app/components]. Para caa componente, deverá ter uma pasta com o nome do componente e dentro dela um arquivo `index.jsx` com a exportação do componente nomeado pela pasta.
+
