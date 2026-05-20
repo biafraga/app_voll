@@ -1,9 +1,9 @@
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import LabeledInput from "../components/LabeledInput";
 import ButtonForm from "../components/ButtonForm";
+import LabeledInput from "../components/LabeledInput";
 
-export default function RegisterScreen(){
+export default function RegisterAll(){
     return (
         <SafeAreaView style={styles.SafeArea}>
             <ScrollView>
