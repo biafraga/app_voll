@@ -39,12 +39,7 @@ função -> ``cammelCase``.
 ## Components primitivos
 <SafeAreaView> -> é um componente primitivo que garante que o conteúdo seja exibidio dentro das áreas seguras da tela, evitando sobreposição com elementos do sistema como a barra de status. 
 <ScrollView> -> é um componente que permite a rolagem do conteúdo quando ele excede o espaço disponível na tela, garantindo que todos os campos do formulário sejam acessíveis mesmo em dispositivos menores. 
-<TouchableOpacity> -> é um componente que cria uma área clicáve. 
-
-## Props primitivas
-keyboardType = "email-adress" -> é uma prop do TextInput que otimiza o teclado para entrada de email, exibindo caracteres como "@" e "." de forma mais acessível.
-
-securityTextEntry= {true} -> é uma prop que oculta o texto digitado, ideal para campo de senha. 
+<TouchableOpacity> -> é um componente que cria uma área clicável. 
 
 ## Estrutura do projeto
 1. Eu vou ter um arquivo chamado `index.jsx`, na raiz. Aquivo obrigatório que irá importar o `App.jsx` que está dentro do src.
@@ -53,3 +48,13 @@ securityTextEntry= {true} -> é uma prop que oculta o texto digitado, ideal para
 4. Dentro da pasta routes, além do arquivo `StackRoutes.jsx`. eu vou ter um arquivo chamado index.jsx que irá chamar o `StackRoutes.jsx`. Esse index é o arquivo que será chamamdo no `App.jsx`.
 5. Todo componente de reuso deverá estar na pasta [src/app/components]. Para caa componente, deverá ter uma pasta com o nome do componente e dentro dela um arquivo `index.jsx` com a exportação do componente nomeado pela pasta.
 
+## Props primitivas
+keyboardType = "email-adress" -> é uma prop do TextInput que otimiza o teclado para entrada de email, exibindo caracteres como "@" e "." de forma mais acessível.
+
+securityTextEntry= {true} -> é uma prop que oculta o texto digitado, ideal para campo de senha. 
+
+## Trabalhando com naveção no React Native
+1. Link da documentação: `https://reactnavigation.org/`
+2. Instalar o core do react navigation: `npm install @react-navigation/native`
+3. Instalar as dependências de ajustes: `npx expo install react-native-screens react-native-safe-area-context`
+4. Instalar a dependência para utilizar a forma Stack Native (pilha nativa) no projeto: `npm install @react-navigation/native-stack`
