@@ -1,9 +1,12 @@
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from "react-native";
-import LabeledInput from "../components/LabeledInput";
-import ButtonForm from "../components/ButtonForm";
+import { useNavigation } from "@react-navigation/native";
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import ButtonForm from "../components/ButtonForm";
+import LabeledInput from "../components/LabeledInput";
 
 export default function LoginScreen() {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView>
@@ -32,7 +35,9 @@ export default function LoginScreen() {
           <View style={styles.footer}>
             
           <Text style={styles.footerText}>Ainda não tem conta?</Text>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("register")}
+            >
               <Text style={styles.footerLink}> Faça seu cadastro!</Text>
             </TouchableOpacity>
           </View>
